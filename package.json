@@ -1,0 +1,24 @@
+{
+  "name": "score-keeper",
+  "version": "1.0.0",
+  "description": "my first ever javascript project",
+  "main": "app.js",
+  "scripts": {
+	  "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+	  "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stove-jeebs/score-keeper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stove-jeebs/score-keeper/issues"
+  },
+  "homepage": "https://github.com/stove-jeebs/score-keeper#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
