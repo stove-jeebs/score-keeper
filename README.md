@@ -1,3 +1,3 @@
 # score-keeper
 
-my first ever javascript project
+my first javascript project
