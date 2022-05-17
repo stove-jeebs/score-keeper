@@ -13,14 +13,20 @@
         alt="table-tennis-img"
         style="width: 600px"
       />
-      <p><b>Ping Pong Score Keeper</b></p>
+      <p class="m-2"><b>Ping Pong Score Keeper</b></p>
       <hr />
-      <h1><span id="score1">0</span> to <span id="score2">0</span></h1>
-      <p>Use the buttons below to keep score</p>
-      <form id="form" action="#">
+      <section class="mx-5">
+        <h1 class="my-5 text-5xl text-bold">
+          <span id="score1">0</span> to <span id="score2">0</span>
+        </h1>
+        <p>Use the buttons below to keep score</p>
         <label for="select"><b>Playing To</b></label>
-        <select name="playTo" id="select">
-          <option value="" name="playTo" selected>---Select a number---</option>
+        <select
+          class="w-12 my-3 bg-white border-2 rounded-full border-grey-100"
+          name="playTo"
+          id="select"
+        >
+          <option value="" name="playTo" selected>---</option>
           <option value="5" name="playTo">5</option>
           <option value="6" name="playTo">6</option>
           <option value="7" name="playTo">7</option>
@@ -28,16 +34,18 @@
           <option value="9" name="playTo">9</option>
           <option value="10" name="playTo">10</option>
         </select>
-        <div class="button-group">
-          <button class="button" id="player1" type="button" disabled>
-            player1
-          </button>
-          <button class="mx-20 button" id="player2" type="button" disabled>
-            player2
-          </button>
-          <button class="button" id="reset" type="button">reset</button>
-        </div>
-      </form>
+      </section>
+      <section class="flex text-white">
+        <button class="bg-teal-300 button" id="player1" type="button" disabled>
+          player1
+        </button>
+        <button class="button bg-cyan-500" id="player2" type="button" disabled>
+          player2
+        </button>
+        <button class="bg-red-500 button" id="reset" type="button">
+          reset
+        </button>
+      </section>
     </main>
     <script src="app.js"></script>
   </body>

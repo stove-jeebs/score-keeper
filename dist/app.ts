@@ -11,13 +11,22 @@ let winningScore = 0;
 let isGameOver = false;
 
 function disableButtons() {
+	if (btn1.disabled === false) changeButtonColor()
   btn1.disabled = true;
   btn2.disabled = true;
 }
 
 function enableButtons() {
+	if (btn1.disabled === true) changeButtonColor()
   btn1.disabled = false;
   btn2.disabled = false;
+}
+
+function changeButtonColor() {
+	btn1.classList.toggle('bg-emerald-300')
+	btn1.classList.toggle('bg-teal-300')
+	btn2.classList.toggle('bg-cyan-700')
+	btn2.classList.toggle('bg-cyan-500')
 }
 
 function reset() {
@@ -46,6 +55,7 @@ btn1?.addEventListener("click", function (event) {
       isGameOver = true;
       score1.style.color = "green";
       score2.style.color = "red";
+			disableButtons()
     }
     score1.textContent = p1Score.toString();
   }
@@ -58,6 +68,7 @@ btn2?.addEventListener("click", function (event) {
       isGameOver = true;
       score1.style.color = "red";
       score2.style.color = "green";
+			disableButtons()
     }
     score2.textContent = p2Score.toString();
   }
