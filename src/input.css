@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .button {
-	@apply grow py-2 rounded
+  @apply py-2 rounded grow;
 }
